@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import * as S from '../styles/menuStyle';
-import logo from '../images/saude-id.jpg';
+// import logo from '../images/saudeid.jpg';
 import Link from 'next/link';
 export default function Menu(props) {
   console.log(props);
@@ -9,7 +9,7 @@ export default function Menu(props) {
     <>
       <S.WrapperMenu>
         <Link href="/">
-            <Image src={logo} height={80} alt="logo" id="logo"/>
+            <Image src={'/images/saudeid.jpg'} height={80} width={120} alt="logo" id="logo"/>
         </Link>
         <S.Links>
           <Link href="/posts">

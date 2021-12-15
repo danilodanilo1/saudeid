@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import arrowDown from '../images/arrowdown.png';
 
 
 export default function ArrowDown() {
@@ -11,7 +10,7 @@ export default function ArrowDown() {
       layout="fixed"
       width={15}
       height={15}
-      src={arrowDown}
+      src={'/images/arrowdown.png'}
     />
   );
 }

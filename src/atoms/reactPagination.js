@@ -5,10 +5,10 @@ import ReactPaginate from 'react-paginate';
 
 export default function ReactPagination(props) {
   const router = useRouter();
-console.log(33,props.data)
+
   const handlePagination = (page) => {
-    const path = router.pathname;
-    const query = router.query;
+    const path = router?.pathname;
+    const query = router?.query;
     query.page = page.selected + 1;
     router.push({
       pathname: path,

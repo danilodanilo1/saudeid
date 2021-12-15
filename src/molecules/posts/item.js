@@ -5,7 +5,7 @@ import * as S from '../../styles/postsStyle';
 export default function Item({ jsonPosts }) {
   return (
     <S.Wrapper>
-      {jsonPosts.data.map((item) => (
+      {jsonPosts?.data?.map((item) => (
         <Items data={item} />
       ))}
     </S.Wrapper>
