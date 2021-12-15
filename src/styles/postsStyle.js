@@ -70,21 +70,21 @@ export const LineTitle = styled.div`
   border: 1px solid #e3e3e3;
   padding: 5px;
   flex-direction: column;
-  > #wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    #image {
-      transform: rotate(${({ turnArrow }) => (turnArrow ? '180deg' : '0')});
-      transition: transform 0.5s ease;
-    }
-  }
 `;
 export const Drop = styled.div`
   padding: 10px 0;
 `;
 
+export const LineWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  #image {
+    transform: rotate(${({ turnArrow }) => (turnArrow ? '180deg' : '0')});
+    transition: transform 0.5s ease;
+  }
+`;
 
 export const Title = styled.div`
   font-weight: bold;
