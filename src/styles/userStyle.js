@@ -1,4 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+
+export const UserInformation = styled.p`
+  >span{
+    color: ${({status})=> status === 'active' ? 'green' : 'red'};
+  }
+`
 
 export const Content = styled.div`
   .paginate-wrap {
@@ -85,9 +91,9 @@ export const Drop = styled.div`
   padding: 10px 0;
 `;
 
-
 export const Title = styled.div`
   font-weight: bold;
+  color: ${({status})=> status === 'active' ? 'green' : 'red'}
 `;
 
 export const Buttons = styled.div`

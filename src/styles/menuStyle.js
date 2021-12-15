@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const WrapperMenu = styled.div`
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:space-around;
   background-color:#000;
   width:100%;
   height:80px;
@@ -21,4 +21,12 @@ export const WrapperMenu = styled.div`
     font-weight:bold;
     font-family:arial, sans-serif;
   }
+  #logo{
+    cursor: pointer;
+  }
+`
+export const Links = styled.div`
+  display:flex;
+  flex-direction:row;
+
 `
